@@ -6,5 +6,5 @@ module.exports = {
     title: `Portfolio Website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-anchor-links`],
 }
