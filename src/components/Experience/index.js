@@ -1,9 +1,8 @@
 import * as React from "react"
-import { experience } from './index.module.css'
 
 const Experience = () => {
     return (
-        <div className={experience} id="experience">
+        <div id="experience" className="">
             <p>Experience</p>
         </div>
     )

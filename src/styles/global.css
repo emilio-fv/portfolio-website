@@ -1,5 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    /* overflow: overlay; */
+}
+
+body, nav {
+    background-color: #09091c;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.border-check {
+    border: 2px solid red;
 }
