@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         'white': '#ffff',
         'accent-light': '#00a8e8',
-        'accent-medium': '#007ea7',
+        'accent-medium': '#013040',
         'accent-dark': '#00171f',
       }
     },
