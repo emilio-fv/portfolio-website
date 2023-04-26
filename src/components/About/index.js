@@ -1,6 +1,5 @@
 import * as React from "react"
-// import headshot from '../../images/headshot.jpg';
-import headshot from '../../images/IMG_5241.jpg';
+import headshot from '../../images/headshot.jpg';
 
 const About = () => {
     return (
