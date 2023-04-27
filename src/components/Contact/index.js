@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react"
 import emailjs from '@emailjs/browser';
 
-
 const Contact = () => {
     // Set state for name, email, subject, and message
     const initialFormState = {
@@ -29,21 +28,20 @@ const Contact = () => {
         event.preventDefault();
         // Check if all fields filled
         for (const [key, value] of Object.entries(formData)) {
-            if (value === null) {
+            if (value === "") {
+                console.log(`Missing ${key}`);
                 setStatus("invalid form")
                 return;
             }
         }
-        console.log(form.current);
 
-        // emailjs.sendForm('portfolio_website', 'template_jbnjdgf', form.current, 'tHeaGfRdFZHccy_bq')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     })
-
-        setStatus("success");
+        emailjs.sendForm('portfolio_website', 'template_jbnjdgf', form.current, 'tHeaGfRdFZHccy_bq')
+            .then((result) => {
+                console.log(result.text);
+                setStatus("success");
+            }, (error) => {
+                console.log(error.text);
+            })
     }
 
     return (
