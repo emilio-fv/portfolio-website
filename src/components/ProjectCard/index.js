@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
             <div className="basis-4/5 flex flex-col gap-[10px] p-8 bg-accent-medium rounded-lg">
                 <div className="flex flex-row items-end gap-[25px]">
                     <p className="text-2xl">{project.title}</p>
-                    <a href={project.github} target="_blank" className="hover:underline">Github</a>
+                    <a href={project.github} className="hover:underline">Github</a>
                 </div>
                 <p>{project.description}</p>
                 <div className="flex flex-row gap-[10px]">
