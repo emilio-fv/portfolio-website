@@ -1,6 +1,6 @@
 import * as React from "react"
-// TODO: Import components
 import Navbar from "../components/Navbar"
+import Sidebar from "../components/Sidebar"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Projects from "../components/Projects"
@@ -11,22 +11,14 @@ import Footer from "../components/Footer"
 const IndexPage = () => {
   return (
     <>
-      {/* TODO: Navbar */}
       <Navbar />
-      {/* TODO: Hero */}
       <Hero />
-      {/* TODO: About */}
       <About />
-      {/* TODO: Projects */}
       <Projects />
-      {/* TODO: Experience */}
       <Experience />
-      {/* TODO: Contact Me */}
       <Contact />
-      {/* TODO: Footer */}
       <Footer />
-      {/* TODO: Left Side Social Media/Prof Account Icons */}
-      {/* TODO: Right Side Email */}
+      <Sidebar />
     </>
   )
 }
