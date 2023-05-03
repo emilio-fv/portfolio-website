@@ -1,5 +1,6 @@
 import NotedImg from '../images/Note-d.png';
 import ProjectSImg from '../images/Project-S.png';
+import VestaImg from '../images/Vesta.png';
 
 function createProject(title, github, description, technologies, src, alt) {
     return { title, github, description, technologies, src, alt };
@@ -11,7 +12,7 @@ const projectData = [
     // Project-S
     createProject("Project-S", "https://github.com/emilio-fv/Project-S", "A MERN-based project management and bug-tracking web application designed for seamless collaboration among software development teams.", ["Mongoose", "MongoDB", "Express", "JavaScript", "React", "Redux", "Material UI"], ProjectSImg, "Project-S project logo"),
     // Vesta
-    createProject("Vesta", "", "A dynamic e-commerce website for a fake designer with an admin interface to update the products in inventory.", ["Express", "JavaScript", "React", "Redux", "Material UI"])
+    createProject("Vesta", "", "A dynamic e-commerce website for a fake designer with an admin interface to update the products in inventory.", ["Express", "JavaScript", "React", "Redux", "Material UI"], VestaImg, "Vesta project logo")
 ];
 
 export default projectData;
