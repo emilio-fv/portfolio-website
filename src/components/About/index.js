@@ -3,7 +3,7 @@ import headshot from '../../images/headshot.jpg';
 
 const About = () => {
     return (
-        <div id="about" className="container px-40 flex flex-col justify-center gap-10 h-screen border-solid border-b-[.5px] border-white">
+        <div id="about" className="container px-40 py-[125px] flex flex-col justify-center gap-10 min-h-screen border-solid border-b-[.5px] border-white">
             <p className="text-4xl">About</p>
             <div className="flex flex-row">
                 <div className="basis-3/5">

@@ -7,6 +7,7 @@ const ExperienceCard = ({ experience }) => {
             <div className="flex justify-between items-end">
                 <div className="flex basis-2/3 gap-[25px] items-end">
                     <p className="text-2xl">{ experience.title }</p>
+                    <p>{ experience.company }</p>
                     <p>{ experience.location }</p>
                 </div>
                 <div className="flex basis-1/3 justify-end">
