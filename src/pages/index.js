@@ -12,13 +12,13 @@ const IndexPage = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <About />
       <Projects />
       <Experience />
       <Contact />
-      <Footer />
-      <Sidebar />
+      <Footer /> */}
+      {/* <Sidebar /> */}
     </>
   )
 }
