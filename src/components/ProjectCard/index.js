@@ -11,12 +11,14 @@ const ProjectCard = ({ project }) => {
                     <p className="text-2xl">{project.title}</p>
                     <a href={project.github} className="hover:underline">Github</a>
                 </div>
-                <p>{project.description}</p>
-                <div className="flex flex-row gap-[10px]">
-                    <p>Built with:</p>
-                    {project.technologies.map((value) => 
-                        <p>{value}</p>
-                    )}
+                <div className="flex flex-col justify-between h-full">
+                    <p>{project.description}</p>
+                    <div className="flex flex-row gap-[10px]">
+                        <p>Built with:</p>
+                        {project.technologies.map((value) => 
+                            <p>{value}</p>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
