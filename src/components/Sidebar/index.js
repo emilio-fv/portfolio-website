@@ -41,7 +41,6 @@ const Sidebar = () => {
             <div className="rotate-90">
                 <a href="mailto:emiliofv.sd@gmail.com" className="bg-accent-medium p-4 rounded-lg no-underline hover:underline">emiliofv.sd@gmail.com</a>
             </div>
-
         </div>
     )
 }
