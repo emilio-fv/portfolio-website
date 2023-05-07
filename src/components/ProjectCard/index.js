@@ -2,21 +2,24 @@ import * as React from "react";
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="w-full flex flex-row gap-[25px]">
-            <div className="basis-1/5">
-                <img src={project.src} alt={project.alt} />
+        <div className="w-full flex flex-col lg:flex-row gap-6">
+            {/* Image */}
+            <div className="flex justify-center lg:flex-1">
+                <img src={project.src} alt={project.alt} className="max-h-[250px]"/>
             </div>
-            <div className="basis-4/5 flex flex-col gap-[10px] p-8 bg-accent-medium rounded-lg">
-                <div className="flex flex-row items-end gap-[25px]">
-                    <p className="text-2xl">{project.title}</p>
+            {/* Project Info */}
+            <div className="lg:flex-[4] flex flex-col justify-center gap-3 bg-accent-medium rounded-lg p-8">
+                <div className="flex flex-row gap-3 items-end">
+                    <p className="text-2xl md:text-3xl">{project.title}</p>
                     <a href={project.github} className="hover:underline">Github</a>
                 </div>
-                <p>{project.description}</p>
-                <div className="flex flex-row gap-[10px]">
-                    <p>Built with:</p>
-                    {project.technologies.map((value) => 
-                        <p>{value}</p>
-                    )}
+                <div className="flex flex-col gap-3">
+                    <div>
+                        <p>{project.description}</p>
+                    </div>
+                    <div>
+                        <p>Built with: {project.technologies.map((value) => value + " ")}</p>
+                    </div>
                 </div>
             </div>
         </div>
