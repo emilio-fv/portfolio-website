@@ -46,14 +46,15 @@ const Navbar = () => {
                 </AnchorLink>
             </div>
             {/* Menu Icon */}
-            <div className='block lg:hidden'>
+            <div className='block md:hidden'>
                 <button className='flex items-center px-3 py-2 border rounded mr-6 mb-7' onClick={event => handleMenuClick()} >
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
             </div>
             {/* Menu */}
-            <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:bg-inherit ${menuOpen === true ? 'bg-accent-medium' : 'hidden'}`}>
-                <ul class={`text-sm lg:flex-grow lg:items-center flex flex-col items-end py-3 gap-1 pr-4 lg:flex-row lg:mb-6 lg:justify-end lg:gap-6`}>                    
+            <div 
+                className={`w-full block flex-grow md:flex md:items-center md:w-auto md:bg-inherit ${menuOpen === true ? 'bg-accent-medium' : 'hidden'}`}>
+                <ul class={`text-sm md:flex-grow md:items-center flex flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>                    
                     <li>
                         <AnchorLink to="/#about" className='hover:underline text-lg'>About</AnchorLink>
                     </li>
