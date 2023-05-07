@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Sidebar = () => {
     return (
-        <div className="sm:hidden fixed bottom-14 lg:flex justify-between w-full pl-12 pr-4">
+        <div className="hidden md:block fixed bottom-14 md:flex justify-between w-full px-4 pl-6">
             <div className="flex flex-col gap-5 bg-accent-medium p-4 rounded-lg">
                 {/* Instagram */}
                 <a href="https://www.instagram.com/emiliovln/">
@@ -41,7 +41,6 @@ const Sidebar = () => {
             <div className="rotate-90">
                 <a href="mailto:emiliofv.sd@gmail.com" className="bg-accent-medium p-4 rounded-lg no-underline hover:underline">emiliofv.sd@gmail.com</a>
             </div>
-
         </div>
     )
 }
