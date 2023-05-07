@@ -3,7 +3,7 @@ import * as React from "react";
 const Footer = () => {
     return (
         <div className="flex flex-col justify-center items-center py-8 gap-3">
-            <p className="text-sm md:text-xl">Designed by" <a className="hover:underline" href="https://github.com/emilio-fv/portfolio-website">Emilio Vazquez</a></p>
+            <p className="text-sm md:text-xl">Designed by: <a className="hover:underline" href="https://github.com/emilio-fv/portfolio-website">Emilio Vazquez</a></p>
             <div className="flex flex-row gap-3 md:hidden">
                 {/* Instagram */}
                 <a href="https://www.instagram.com/emiliovln/">
