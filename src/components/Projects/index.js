@@ -4,7 +4,7 @@ import ProjectCard from "../ProjectCard/index.js";
 
 const Projects = () => {
     return (
-        <div id="projects" className="container px-40 py-[125px] flex flex-col justify-center gap-10 min-h-screen border-solid border-b-[.5px] border-white">
+        <div id="projects" className="container px-20 py-[125px] md:px-40 flex flex-col justify-center gap-10 min-h-screen border-solid border-b-[.5px] border-white">
             <p className="text-4xl">Projects</p>
             <div className="flex flex-col justify-center items-center gap-[25px]">
                 {projectData.map((project) => (
