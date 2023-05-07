@@ -8,9 +8,9 @@ const ProjectCard = ({ project }) => {
                 <img src={project.src} alt={project.alt} className="max-h-[250px]"/>
             </div>
             {/* Project Info */}
-            <div className="lg:flex-[4] flex flex-col justify-center gap-3">
+            <div className="lg:flex-[4] flex flex-col justify-center gap-3 bg-accent-medium rounded-lg p-8">
                 <div className="flex flex-row gap-3 items-end">
-                    <p className="text-3xl">{project.title}</p>
+                    <p className="text-2xl md:text-3xl">{project.title}</p>
                     <a href={project.github} className="hover:underline">Github</a>
                 </div>
                 <div className="flex flex-col gap-3">
