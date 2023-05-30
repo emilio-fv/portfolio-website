@@ -37,7 +37,7 @@ const Navbar = () => {
                         <AnchorLink to="/#contact" className='hover:underline text-xs md:text-lg'>Contact</AnchorLink>
                     </li>
                     <li>
-                        <button onClick={event => handleResumeClick()} className='text-xs px-4 py-1 border-solid border-[.5px] border-white hover:border-slate-400 text-lg'>Resume</button>
+                        <button onClick={event => handleResumeClick()} className='text-xs md:text-base px-4 py-1 border-solid border-[.5px] border-white hover:border-slate-400 text-lg'>Resume</button>
                     </li>
                 </ul>
             </div>
