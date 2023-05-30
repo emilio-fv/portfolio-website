@@ -14,61 +14,30 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex items-center justify-between flex-wrap sticky top-0 pt-6 border-solid border-b-[1px] border-white'>
+        <nav className='flex items-center justify-between sticky top-0 pt-6 border-solid border-b-[1px] border-white'>
             {/* Logo */}
-            <div className='flex items-center flex-shrink-0 ml-6  mb-6'>
+            <div className='flex items-center flex-shrink-0 ml-6 mb-6'>
                 <AnchorLink to='/#home'>
-                    <p className='text-4xl'>EV</p>
+                    <p className='text-2xl md:text-4xl'>EV</p>
                 </AnchorLink>
             </div>
-            {/* Menu Icon */}
-            <div className='block md:hidden'>
-                <button className='flex items-center px-3 py-2 border rounded mr-6 mb-7' onClick={event => handleMenuClick()} >
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                </button>
-            </div>
-            {/* Menu (Mobile) */} 
-            <div
-                className={`md:hidden block w-full ${menuOpen === true ? 'bg-accent-medium' : 'hidden'}`}
-            >
-                <ul class={`flex text-sm md:flex-grow md:items-center flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>
+            {/* Menu */}
+            <div>
+                <ul class={`flex text-sm flex-grow items-center flex-row items-end py-3 gap-1 pr-4 flex-row mb-6 justify-end gap-2 md:gap-6`}>
                     <li>
-                        <AnchorLink to="/#about" className='hover:underline text-lg'>About</AnchorLink>
+                        <AnchorLink to="/#about" className='hover:underline text-xs md:text-lg'>About</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink to="/#projects" className='hover:underline text-lg'>Projects</AnchorLink>
+                        <AnchorLink to="/#projects" className='hover:underline text-xs md:text-lg'>Projects</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink to="/#experience" className='hover:underline text-lg'>Experience</AnchorLink>
+                        <AnchorLink to="/#experience" className='hover:underline text-xs md:text-lg'>Experience</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink to="/#contact" className='hover:underline text-lg'>Contact</AnchorLink>
+                        <AnchorLink to="/#contact" className='hover:underline text-xs md:text-lg'>Contact</AnchorLink>
                     </li>
                     <li>
-                        <button onClick={event => handleResumeClick()} className='px-4 py-1 border-solid border-[.5px] border-white hover:border-slate-400 text-lg'>Resume</button>
-                    </li>
-                </ul>
-            </div>
-
-            {/* Menu (Tablet/Desktop) */}
-            <div
-                className='hidden md:inline'
-            >
-                <ul class={`flex text-sm md:flex-grow md:items-center flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>
-                    <li>
-                        <AnchorLink to="/#about" className='hover:underline text-lg'>About</AnchorLink>
-                    </li>
-                    <li>
-                        <AnchorLink to="/#projects" className='hover:underline text-lg'>Projects</AnchorLink>
-                    </li>
-                    <li>
-                        <AnchorLink to="/#experience" className='hover:underline text-lg'>Experience</AnchorLink>
-                    </li>
-                    <li>
-                        <AnchorLink to="/#contact" className='hover:underline text-lg'>Contact</AnchorLink>
-                    </li>
-                    <li>
-                        <button onClick={event => handleResumeClick()} className='px-4 py-1 border-solid border-[.5px] border-white hover:border-slate-400 text-lg'>Resume</button>
+                        <button onClick={event => handleResumeClick()} className='text-xs px-4 py-1 border-solid border-[.5px] border-white hover:border-slate-400 text-lg'>Resume</button>
                     </li>
                 </ul>
             </div>
