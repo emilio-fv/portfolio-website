@@ -27,10 +27,11 @@ const Navbar = () => {
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
             </div>
-            {/* Menu (Mobile) */}
+            {/* Menu (Mobile) */} 
             <div
-                className={`w-full block flex-grow md:flex md:items-center md:w-auto md:bg-inherit ${menuOpen === true ? 'bg-accent-medium' : 'hidden'}`}>
-                <ul class={`text-sm md:flex-grow md:items-center flex flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>                    
+                className={`md:hidden block w-full ${menuOpen === true ? 'bg-accent-medium' : 'hidden'}`}
+            >
+                <ul class={`flex text-sm md:flex-grow md:items-center flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>
                     <li>
                         <AnchorLink to="/#about" className='hover:underline text-lg'>About</AnchorLink>
                     </li>
@@ -48,10 +49,12 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            {/* Menu Desktop */}
+
+            {/* Menu (Tablet/Desktop) */}
             <div
-                className={`w-full block sm:hidden flex-grow md:flex md:items-center md:w-auto md:bg-inherit`}>
-                <ul class={`text-sm md:flex-grow md:items-center flex flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>                    
+                className='hidden md:inline'
+            >
+                <ul class={`flex text-sm md:flex-grow md:items-center flex-col items-end py-3 gap-1 pr-4 md:flex-row md:mb-6 md:justify-end md:gap-6`}>
                     <li>
                         <AnchorLink to="/#about" className='hover:underline text-lg'>About</AnchorLink>
                     </li>

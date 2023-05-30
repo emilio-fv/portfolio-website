@@ -21,7 +21,7 @@ const ExperienceCard = ({ experience }) => {
                 </div>
             </div>
             {/* Header (Desktop) */}
-            <div className="sm:hidden lg:flex lg:flex-row lg:justify-between items-end">
+            <div className="hidden lg:inline lg:flex lg:flex-row lg:justify-between items-end">
                 <div className="lg:flex lg:gap-6 lg:items-end">
                     <p className="md:text-2xl">{experience.title}</p>
                     <p className="text-xs md:text-lg">{experience.company} | {experience.location}</p>
