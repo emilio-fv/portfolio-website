@@ -1,7 +1,7 @@
-function createExperience(title, company, dates, description, location) {
-    return { title, company, dates, description, location }
-};
+// Imports
+import { createExperience } from '../utils/createExperience';
 
+// Experience Data
 const experienceData = [
     // Coding Dojo
     createExperience("Full-Stack Developer Certificate", "Coding Dojo", "Aug - Nov 2022", ["An immersive 1000+ hours, 4-month full-stack web development bootcamp that specializes in building, testing, debugging, and deploying full-stack applications in Python, C#, and MERN (MongoDB, Express, React, Node.js)."], "Remote"),
@@ -11,4 +11,5 @@ const experienceData = [
     createExperience("Freelance Musician", "Self-employed", "2016 - Present", ["Coordinated with 60+ clients annually to provide musical accommodations for a range of events from weddings, corporate events, memorial services, private parties, and educational outreach programs.", "Collaborated with 25+ local musicians with various backgrounds and experience levels, utilizing prompt and respectful communication of project details and expectations to consistently produce quality services.", "Maintained a thorough schedule of events and details to ensure appropriate music was prepared in advance and to account for any possible last minute accommodations or requests made by clients."], "Phoenix Metro Area")
 ];
 
+// Exports
 export default experienceData;

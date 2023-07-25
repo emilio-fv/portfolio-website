@@ -1,2 +1,2 @@
 // Global CSS
-require('./src/styles/global.css');
+require('./src/assets/global.css');

@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import resumeLink from '../../data/resume.pdf';
+import resumeLink from '../../assets/resume.pdf';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    // const [menuOpen, setMenuOpen] = useState(false);
 
     const handleResumeClick = () => {
         window.open(resumeLink, '_blank');
-    }
-
-    const handleMenuClick = () => {
-        menuOpen === true ? setMenuOpen(false) : setMenuOpen(true);
     }
 
     return (

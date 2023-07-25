@@ -1,5 +1,5 @@
 import * as React from "react"
-import projectData from "../../data/projects.js";
+import projectData from "../../assets/projects";
 import ProjectCard from "../ProjectCard/index.js";
 
 const Projects = () => {
