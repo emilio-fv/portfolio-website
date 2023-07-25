@@ -2,7 +2,7 @@
 import NotedImg from './Note-d.png';
 import ProjectSImg from './Project-S.png';
 import VestaImg from './Vesta.png';
-import createProject from '../utils/createProject';
+import { createProject } from '../utils/createProject';
 
 // Projects Data
 const projectData = [

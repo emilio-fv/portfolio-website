@@ -1,5 +1,5 @@
 // Imports
-import createExperience from '../utils/createExperience';
+import { createExperience } from '../utils/createExperience';
 
 // Experience Data
 const experienceData = [
