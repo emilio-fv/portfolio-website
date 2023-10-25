@@ -23,3 +23,11 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+Resources
+- https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
+
+
+Inspo
+- https://v4.brittanychiang.com
