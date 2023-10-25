@@ -45,7 +45,7 @@ const Navbar = ({ refs }) => {
   }
 
   return (
-    <AppBar position="sticky" elevation={0}>
+    <AppBar position="sticky" elevation={0} sx={{ backgroundColor: 'transparent' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo */}

@@ -3,4 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #061d21;
+    font-family: 'Aldrich', sans-serif;
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }

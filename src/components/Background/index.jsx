@@ -1,20 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import useCanvas from '../../hooks/useCanvas';
 
-const Background = (props) => {
-  const { drawGridPattern, ...rest } = props;
-  const canvasRef = useRef(null);
+const Background = ({ draw }) => {
+  const canvasRef = useCanvas(draw);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
-    context.lineWidth = .5;
-    context.strokeStyle = '#11788a';
-    context.width = window.innerWidth;
-    context.height = window.innerHeight;
-    drawGridPattern(context, 100, 50, 0, 0);
-  }, [drawGridPattern])
-
-  return <canvas ref={canvasRef} {...props} />
+  return <canvas ref={canvasRef} />
 
 };
 

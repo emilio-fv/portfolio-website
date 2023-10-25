@@ -6,6 +6,10 @@ import Contact from './components/Contact';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Background from './components/Background';
+import drawGridPattern from './utils/drawGridPattern';
+
+const font = "'Aldrich', sans-serif";
 
 let theme = createTheme({
   palette: {
@@ -20,6 +24,7 @@ let theme = createTheme({
     allVariants: {
       color: '#f2f2f2'
     },
+    fontFamily: font
   },
   components: {
     MuiButton: {
@@ -82,11 +87,12 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-        <Navbar refs={{ heroRef, aboutRef, projectsRef, contactRef }}/>
-        <Hero ref={heroRef}/>
-        <About ref={aboutRef}/>
-        <Projects ref={projectsRef}/>
-        <Contact ref={contactRef}/>
+      <Background draw={drawGridPattern} />
+      <Navbar refs={{ heroRef, aboutRef, projectsRef, contactRef }}/>
+      <Hero ref={heroRef}/>
+      <About ref={aboutRef}/>
+      <Projects ref={projectsRef}/>
+      <Contact ref={contactRef}/>
     </ThemeProvider>
   )
 }
