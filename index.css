@@ -1,0 +1,86 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* CSS Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-optical-sizing: auto;
+    color: #b7b7cb;
+}
+
+/* HTML Tags */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(#19191c 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #19191c 1.2000000000000002px, #000000 1.2000000000000002px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+}
+
+/* IDs */
+#hero {
+    height: 90vh;
+}
+
+#about {
+    height: 100vh;
+}
+
+/* #projects { } */
+
+#experience {
+    min-height: 100vh;
+}
+
+/* #sidebar { } */
+
+/* Tablet & Larger Screens */
+@media (min-width: 768px) {
+    #about, #projects, #experience {
+        padding: 0 17%;
+    }
+
+    .project > p {
+        /* font-size: 5rem; */
+    }
+}
+
+/* Classes */
+.test-image {
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px #b7b7cb;
+}
+
+.h1-styling {
+    font-size: 3.25rem;
+}
+
+.border-helper {
+    border: 2px solid red;
+}
+
+.fs-custom-6 {
+    font-size: .9rem;
+}
+
+/* Project & Experience Cards */
+.project, .experience-entry {
+    background-color: cadetblue;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

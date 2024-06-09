@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio Vazquez | Cybersecurity Portfolio</title>
+    <!-- TODO description -->
+    <!-- TODO keywords -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap setup -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://s.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body class="px-5 container-fluid">
+    <!-- ========== Navbar: navigation links & resume button ========== -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#top">EV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                </ul>
+                <button id="resume-button" class="btn btn-outline-success" onclick="window.open('./content/resume.pdf', '_blank')">Resume</button>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== Website Content ========== -->
+    <div class="container-fluid flex-column align-items-center justify-content-center">
+        <!-- ========== Hero: name, roles, and headshot ========== -->
+        <div id="hero" class="d-flex flex-column flex-md-row">
+                <div class="h-100 col-md-7 d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center text-md-start">
+                        <h1 class="fs-1">Emilio Vazquez</h1>
+                        <p class="fs-custom-6">Cybersecurity Analyst | Fullstack Developer</p>
+                    </div>
+                </div>
+                <div class="h-100 col-md-5 d-flex align-items-md-center justify-content-center mb-5 mb-md-0">
+                    <img src="./images/headshot.jpg" alt="Emilio Vazquez headshot" class="test-image">
+                </div>
+        </div>
+        <!-- ========== About: personal statement ========== -->
+        <div id="about" class="d-flex flex-column justify-content-center">
+            <h2 class="fs-2 my-3">About</h2>
+            <div class="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quaerat quod fuga nisi veritatis sint quae eaque, blanditiis ab, odit, deleniti suscipit asperiores! Tempora totam porro fuga, ipsa praesentium voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quam, voluptatem atque velit aperiam soluta sed assumenda accusamus error mollitia et, voluptate, expedita quibusdam neque rem reiciendis provident consequuntur esse?</p>
+            </div>
+        </div>
+
+<!-- ========================= IN PROGRESS ====================================== -->
+        <!-- ========== Projects ========== -->
+        <div id="projects" class="d-flex flex-column justify-content-center gap-4 py-5">
+            <h2 class="fs-2 my-3">Projects</h2>
+            <!-- ========== Cybersecurity Tools Comparative Analysis ========== -->
+            <div class="project container-fluid p-3">
+                <!-- Mobile title -->
+                <div class="d-flex d-lg-none flex-column text-center py-2">
+                    <p class="text-decoration-underline">Cybersecurity Tools Comparative Analysis</p>
+                    <a class="text-decoration-none" href="https://alike-wombat-fa8.notion.site/Cybersecurity-Tools-Comparative-Analysis-f12482b42e494516a8283b4efb37386f">Documentation</a>
+                </div>
+                <!-- Desktop title -->
+                <div class="d-none d-lg-flex flex-row">
+                    <p class="text-decoration-underline">Cybersecurity Tools Comparative Analysis</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://alike-wombat-fa8.notion.site/Cybersecurity-Tools-Comparative-Analysis-f12482b42e494516a8283b4efb37386f">Documentation</a>
+                </div>
+                <p class="text-decoration-none">A comparative analysis of various cybersecurity tools widely used in the industry. Various categories of tools are assessed with ease of use, cost, performance, and overall value in mind as they relate to potential use cases. In addition, this analysis is intended to provide a foundational knowledge base to foster informed decision making when it comes to choosing the right security tools.</p>
+                <p>Tools Analyzed:&nbsp;Antivirus, Firewalls, Intrusion Detection/Prevention Systems (IDS/IPS), Security Incident and Event Management (SIEM), Vulnerability Scanners, Network Security Monitoring, Penetration Testing, Encryption, Identity and Access Management (IAM)</p>
+            </div>
+            <!-- ========== Vulnerability Assessment ========== -->
+            <div class="project container-fluid p-3">
+                <div class="d-flex d-lg-none flex-column text-center py-2">
+                    <p class="text-decoration-underline">Vulnerability Assessment</p>
+                    <a class="text-decoration-none" href="https://alike-wombat-fa8.notion.site/Vulnerability-Assessment-73f761a33fb14dfb812a64b6b086b778">Documentation</a>
+                </div>
+                <div class="d-none d-lg-flex flex-row">
+                    <p class="text-decoration-underline">Vulnerability Assessment</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://alike-wombat-fa8.notion.site/Vulnerability-Assessment-73f761a33fb14dfb812a64b6b086b778">Documentation</a>
+                </div>
+                <p>A vulnerability assessment of the application DVWA (Damn Vulnerable Web Application) using widely used tools in the industry and providing a report and remediation recommendations.</p>
+                <p>Tools: VMWare Fusion, Kali Linux, Nmap, Nessus, OpenVAS, Burp Suite</p>
+            </div>
+            <!-- ========== Network Security Monitoring Workstation & Attack Simulation ========== -->
+            <div class="project container-fluid p-3">
+                <div class="d-flex d-lg-none flex-column text-center py-2">
+                    <p class="text-decoration-underline">Network Security Monitoring Workstation & Attack Simulation</p>
+                    <a class="text-decoration-none" href="https://garnet-bathtub-08d.notion.site/Noted-8cf96665dc4e4a37b723c8134b095965?pvs=74">Documentation</a>
+                </div>
+                <div class="d-none d-lg-flex flex-row">
+                    <p class="text-decoration-underline">Network Security Monitoring Workstation & Attack Simulation</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://garnet-bathtub-08d.notion.site/Noted-8cf96665dc4e4a37b723c8134b095965?pvs=74">Documentation</a>
+                </div>
+                <p>A workstation to monitor web application  networks, conduct vulnerability assessments, and simulate attacks to produce reports and remediation recommendations.</p>
+                <p>Tools:&nbsp;VMWare Fusion, Kali Linux, Wireshark, Zeek, SolarWinds Network Performance Monitor, Metasploit</p>
+            </div>
+            <!-- ========== Noted ========== -->
+            <div class="project container-fluid p-3">
+                <div class="d-flex d-lg-none flex-column text-center py-2">
+                    <p class="text-decoration-underline">Noted</p>
+                    <div>
+                        <a class="text-decoration-none" href="https://garnet-bathtub-08d.notion.site/Noted-8cf96665dc4e4a37b723c8134b095965?pvs=74">&nbsp;Documentation</a>
+                        <a class="text-decoration-none" href="https://noted-frontend.vercel.app/">&nbsp;Deployment</a>
+                        <a class="text-decoration-none" href="https://github.com/emilio-fv/noted">&nbsp;Github</a>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex flex-row">
+                    <p class="text-decoration-underline">Noted</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://garnet-bathtub-08d.notion.site/Noted-8cf96665dc4e4a37b723c8134b095965?pvs=74">&nbsp;Documentation</a>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://noted-frontend.vercel.app/">&nbsp;Deployment</a>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="https://github.com/emilio-fv/noted">&nbsp;Github</a>
+                </div>
+                <p>A social media web application for music enthusiasts to track, review, and share the music tey listen to.</p>
+                <p>Tools:&nbsp;React, Material UI, Express, Mongoose, MongoDB Atlas, Vercel</p>
+            </div>
+            <!-- ========== Project Card Template ========== -->
+            <!-- <div class="project container-fluid p-3">
+                <div class="d-flex d-lg-none flex-column text-center py-2">
+                    <p class="text-decoration-underline">PROJECT_TITLE</p>
+                    <a class="text-decoration-none" href="LINK">Documentation</a>
+                </div>
+                <div class="d-none d-lg-flex flex-row">
+                    <p class="text-decoration-underline">PROJECT_TITLE</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <a class="text-decoration-none" href="LINK">Documentation</a>
+                </div>
+                <p class="text-decoration-none">DESCRIPTION</p>
+                <p>Tools:&nbsp;TOOLS</p>
+            </div> -->
+        </div>
+        <!-- ========== Experience ========== -->
+        <div id="experience" class="d-flex flex-column justify-content-center gap-4 py-5 mb-3">
+            <h2 class="fs-2 my-3">Experience</h2>
+            <!-- ========== Private Music Teacher ========== -->
+            <div class="experience-entry container-fluid d-flex flex-column gap-2 p-3">
+                <div class="d-flex d-lg-none flex-column align-items-center">
+                    <p class="mb-0 fw-bold">Private Music Teacher</p>
+                    <p class="mb-0">Vazquez Studios | Phoenix, AZ</p>
+                    <p class="mb-0">2016 - Present</p>
+                </div>
+                <div class="d-none d-lg-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold">Private Music Teacher</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p class="-italic">Vazquez Studios</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p>Phoenix, AZ</p>
+                    </div>
+                    <p>2016 - Present</p>
+                </div>
+                <ul>
+                    <li>
+                        Managed a studio of 30+ clients a week conducting one-on-one lessons with students of all ages (from 4 to 60+ years old) and experience (from beginner to advanced).
+                    </li>
+                    <li>
+                        Sustained a consistent year-round program by anticipating scheduling conflicts through thorough communication and accommodations with students.
+                    </li>
+                    <li>
+                        Generated curated curriculums for each student's independent needs that establishes a solid technical foundation, self-sufficiency with independent work, and achieves personal goals (auditions, competitions, scholarships, etc).
+                    </li>
+                </ul>
+            </div>
+            <!-- ========== Freelance Musician ========== -->
+            <div class="experience-entry container-fluid d-flex flex-column gap-2 p-3">
+                <div class="d-flex d-lg-none flex-column align-items-center">
+                    <p class="mb-0 fw-bold">Freelance Musician</p>
+                    <p class="mb-0">Phoenix Metro Area</p>
+                    <p class="mb-0">2022 - Present</p>
+                </div>
+                <div class="d-none d-lg-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold">Freelance Musician</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p>Phoenix Metro Area</p>
+                    </div>
+                    <p>2022 - Present</p>
+                </div>
+                <ul>
+                    <li>
+                        ENTRY
+                    </li>
+                </ul>
+            </div>
+            <!-- ========== Board President ========== -->
+            <div class="experience-entry container-fluid d-flex flex-column gap-2 p-3">
+                <div class="d-flex d-lg-none flex-column align-items-center">
+                    <p class="mb-0 fw-bold">Board President</p>
+                    <p class="mb-0">Tetra String Quartet | Tempe, AZ</p>
+                    <p class="mb-0">2022 - Present</p>
+                </div>
+                <div class="d-none d-lg-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold">Board President</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p class="-italic">Tetra String Quartet</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p>Tempe, AZ</p>
+                    </div>
+                    <p>2022 - Present</p>
+                </div>
+                <ul>
+                    <li>
+                        ENTRY
+                    </li>
+                </ul>
+            </div>
+            <!-- ========== Experience Card Template ========== -->
+            <!-- <div class="experience-entry container-fluid d-flex flex-column gap-2 p-3">
+                <div class="d-flex d-lg-none flex-column align-items-center">
+                    <p class="mb-0 fw-bold">TITLE</p>
+                    <p class="mb-0">COMPANY | LOCATION</p>
+                    <p class="mb-0">DATES</p>
+                </div>
+                <div class="d-none d-lg-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold">TITLE</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p class="-italic">COMPANY</p>
+                        <p>&nbsp;|&nbsp;</p>
+                        <p>LOCATION</p>
+                    </div>
+                    <p>DATES</p>
+                </div>
+                <ul>
+                    <li>
+                        ENTRY
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <!-- ========== Sidebar ========== -->
+        <div id="sidebar" class="d-flex fixed-bottom flex-row align-items-center justify-content-center gap-4 py-3">
+            <a class="nav-link" href="mailto:emiliofv.sd@gmail.com">
+                <i class="fa-regular fa-envelope fa-xl"></i>
+            </a>
+            <a class="nav-link" href="https://www.instagram.com/emiliovln/" target="_blank">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a class="nav-link" href="https://github.com/emilio-fv" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a class="nav-link" href="https://www.linkedin.com/in/emiliofv/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap setup -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a47804ee6e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
