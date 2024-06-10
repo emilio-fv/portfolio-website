@@ -46,13 +46,20 @@ body {
     #about, #projects, #experience {
         padding: 0 17%;
     }
-
-    .project > p {
-        /* font-size: 5rem; */
-    }
 }
 
 /* Classes */
+.btn {
+    border-color: rgb(139, 139, 139) !important;
+    color: rgb(139, 139, 139) !important;
+}
+
+.btn:hover, .btn:active, .btn:focus, .btn:hover, .btn:active, .open>.dropdown-toggle.btn {
+    border-color: #b7b7cb !important;
+    color: #b7b7cb !important;
+    background-color: transparent !important;
+}
+
 .test-image {
     height: 250px;
     width: 250px;
